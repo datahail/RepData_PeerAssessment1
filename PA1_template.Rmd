@@ -137,7 +137,7 @@ activ$steps[is.na(activ$steps)] <- dailyAve
 ```{r, dailySteps2, fig.align='center'}
 
 totNAnone <- aggregate(steps~date, activ, sum)
-head(tot) ## The first few lines of the daily total steps
+head(totNAnone) ## The first few lines of the daily total steps
 with(totNAnone, hist(steps, col="wheat", main="Histogram - total daily steps", xlab="Total daily steps", ylab="Frequency", font.lab=2, col.lab="darkblue", col.main="forestgreen"))
         
 ```
